@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../CSS/estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bodegas El Paraiso | Contacto</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="../Img/Logo.jfif" class="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">Inicio</a>
+                </li><br>
+                <li>
+                    <a href="./conocenos.html">Conocenos</a>
+                </li><br>
+                <li>
+                    <a href="./vinos.html">Vinos</a>
+                </li><br>
+                <li>
+                    <a href="./fincas.html">Fincas</a>
+                </li><br>
+                <li>
+                    <a href="#">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="contactos">
+        <div>
+            <h1>Contacto</h1>
+        </div>
+        <form action="" autocomplete="on">
+            <label for="nombre"><p>Nombre</p></label><br>
+            <input type="text" name="nombre" id="nombre" placeholder="Ej:Jhoana" required><br><br>
+            <label for="apellido"><p> Apellido </p></label><br>
+            <input type="text" name="apellido" id="apellido" placeholder="Ej:Alfonso" required><br><br>
+            <label for="correo"><p>Correo</p></label><br>
+            <input type="text" name="correo" id="correo" placeholder="proyecto1@coderhouse.com" required><br><br>
+            <label for="sexo"><p>Sexo</p></label><br>
+            <input type="radio" name="sexo" value="masculino"><strong> Masculino </strong>
+            <input type="radio" name="sexo" value="femenino"><strong> Femenino </strong>
+            <input type="radio" name="sexo" value="otro"><strong> Otro </strong><br><br>
+            <label for="datemin"><p>Ingrese su fecha de nacimiento</p></label><br>
+            <input type="date" name="datemin" id="datemin" min="2004-01-02"><br><br>
+            <label for="mensaje"><p>Mensaje</p></label><br>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Ej: Hola"></textarea> <br>
+            <input type="submit" name="Enviar" value="Enviar">
+        </form>
+    </main>
+</body>
+</html>
