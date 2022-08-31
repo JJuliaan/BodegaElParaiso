@@ -3,64 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/estilo.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vinos - Mendoza</title>
 </head>
 <body>
-    <header>
-        <div>
-            <img src="../Img/Logo.jfif" class="Logo">        
-        </div>
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li><br>
-                <li>
-                    <a href="./conocenos.html">Conocenos</a>
-                </li><br>
-                <li>
-                    <a href="./vinos.html">Vinos</a>
-                </li><br>
-                <li>
-                    <a href="#">Fincas</a>
-                </li><br>
-                <li>
-                    <a href="./contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h1>Nuestras Fincas</h1>
-            <div>
-                <img src="../Img/fincas_fincas.jfif">
+    <div class="container-fluid">
+        <header class="row">
+            <nav class="navbar navbar-expand-lg navbar-light bg-black" style="padding: 0px;">
+                <div class="container-fluid" id="nav">
+                  <a class="navbar-brand" href="#"><img src="../Img/Logo.jfif" class="Logo" alt=""></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link active" href="../index.html">Inicio</a>
+                      <a class="nav-link active" href="./conocenos.html">Conocenos</a>
+                      <a class="nav-link active" href="./vinos.html">Vinos</a>
+                      <a class="nav-link active" href="#">Fincas</a>
+                      <a class="nav-link active" href="./contacto.html">Contacto</a>
+                    </div>
+                  </div>
+                </div>
+            </nav>
+        </header>
+        <main class="row">
+            <h1 class="col-12 col-lg-12">Nuestras Fincas</h1>
+            <div class="col-12 col-lg-12">
+                <img src="../Img/fincas_fincas.jfif" style="width: 100%;">
             </div>
-            <p>Nuestras fincas están situadas en Luján de Cuyo y Valle de Uco, dos de las más destacadas zonas mendocinas, cada una de las cuales aporta su unicidad y nos da vinos irrepetibles</p>
-            <article>
-                <h3>El Hielo</h3>
-                <h3>Los Poderosos</h3>
-                <h3>El Paraiso</h3>
-                <!-- Profe aca tengo una idea de poner mapas y las localizaciones de los viñedos, pero todavia no se puede hacer no ? -->
-            </article>
-        </section>
+            <div class="col-12 col-lg-12">
+                <p>Nuestras fincas están situadas en Luján de Cuyo y Valle de Uco, dos de las más destacadas zonas mendocinas, cada una de las cuales aporta su unicidad y nos da vinos irrepetibles</p>
+                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                    <label class="btn btn-outline-primary" for="btnradio1"><h3>El Hielo</h3></label>
+                
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btnradio2"><h3>Los Poderosos</h3></label>
+                
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btnradio3"><h3>El Paraiso</h3></label>
+                </div>
+                <!-- <h1>Nuestras Fincas</h1>
+                <div>
+                    <img src="../Img/fincas_fincas.jfif">
+                </div>
+                <p>Nuestras fincas están situadas en Luján de Cuyo y Valle de Uco, dos de las más destacadas zonas mendocinas, cada una de las cuales aporta su unicidad y nos da vinos irrepetibles</p>
+                <article>
+                    <h3>El Hielo</h3>
+                    <h3>Los Poderosos</h3>
+                    <h3>El Paraiso</h3>
+                    <!- Profe aca tengo una idea de poner mapas y las localizaciones de los viñedos, pero todavia no se puede hacer no ?
+                </article> -->
+            </div>
+        </div>
     </main>
 
     <!-- FOOTER -->
-    <footer>
-        <ul>
-            <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
-            <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
-            <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
-        </ul>
-        <div>
-            <p>Bodegas El Paraiso 2022 - Todos los derechos reservados</p>
+    <footer class="row me-0">
+        <div class="col-12 col-lg-1">
+            <nav class="navbar navbar-light">
+                <div class="container">
+                <a class="navbar-brand" href="https://www.instagram.com/">
+                    <img src="../Img/icons8-instagram-48.png" style="background-color: black;" alt="" width="50" height="45">
+                </a>
+                </div>
+            </nav>
         </div>
-        <div>
-            <img src="../Img/Logo.jfif" class="Logo"> 
+        <div class="col-12 col-lg-1">
+            <nav class="navbar navbar-light">
+                <div class="container">
+                <a class="navbar-brand" href="https://twitter.com/home">
+                    <img src="../Img/icons8-twitter-48.png" style="background-color: black;" alt="" width="50" height="45">
+                </a>
+                </div>
+            </nav>
+        </div>
+        <div class="col-12 col-lg-1">
+            <nav class="navbar navbar-light">
+                <div class="container">
+                <a class="navbar-brand" href="https://www.facebook.com/">
+                    <img src="../Img/icons8-facebook-48.png" style="background-color: black;" alt="" width="50" height="45">
+                </a>
+                </div>
+            </nav>
+        </div>
+        <div class="col-12 col-lg-7">
+            <p style="padding-left: 100px; padding-top: 60px;">Bodegas El Paraiso 2022 - Todos los derechos reservados</p>
+        </div>
+        <div class="col-12 col-lg-2">
+            <img src="../Img/Logo.jfif" class="Logo">            
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
