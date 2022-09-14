@@ -1,0 +1,12 @@
+main{
+    background-color: map-get($estilos, colorM);
+    h1{
+        text-align: map-get($estilos, centro);
+    }
+    article{
+        .artiSup{@include padding(20%, 0, 0, 0)}
+        .artiInfe{@include padding(15%, 0, 0, 0)}
+        .paraiso{@include padding(10%, 0, 0, 0)}
+    }
+    form{text-align: map-get($estilos, centro);}
+}

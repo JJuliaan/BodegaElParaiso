@@ -1,0 +1,14 @@
+footer{
+    background-color: map-get($estilos, colorHF);
+    a{
+        background-color: map-get($estilos, colorM);
+        img{
+            @include altoAncho(45px, 50px)
+        }
+    }
+    div{
+        p{
+            @include padding(60px, 0, 100px, 0)
+        }
+    }
+}

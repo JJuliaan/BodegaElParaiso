@@ -1,0 +1,9 @@
+.Logo{width: 100px;}
+.LogoF{@extend .Logo}
+.carrucel{height: map-get($estilos, largoCarrucel);}
+.imgNH{width: 100%;}
+.imgV{@extend .imgNH;}
+.imgFinc{@extend .imgNH;}
+.imgCont{@extend .imgNH;}
+.vinoParaiso{width: 50%;}
+.imgPC{margin-bottom: -3px;}

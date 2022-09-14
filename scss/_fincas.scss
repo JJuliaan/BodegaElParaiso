@@ -1,0 +1,11 @@
+main{
+    div{
+        background-color: map-get($estilos, colorM);
+        div{background-color: map-get($estilos, colorM);
+            div{
+                background-color: map-get($estilos, colorM);
+                h3{background-color: map-get($estilos, colorM);}
+            }
+        }
+    }
+}
