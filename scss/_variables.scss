@@ -1,3 +1,4 @@
+*  {box-sizing: border-box ; padding: 0 ;margin: 0 ;}
 @mixin padding($pTop, $pBottom, $pLeft, $pRight){
     padding-top: $pTop;
     padding-bottom: $pBottom;
@@ -12,7 +13,9 @@ $estilos:(
     colorTitulo: #00FFFF,
     colorHF: #45818E,
     colorM: #134F5C,
-    colorLetras: black,
+    colorLetras: white,
+    colorBorde: black,
     centro: center,
     largoCarrucel: 735px,
-);
+    largoCarrucelM: 200px
+)
