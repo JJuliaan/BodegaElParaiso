@@ -1,5 +1,15 @@
 @media only screen and (max-width: 768px) {
-    .vinoParaiso{width: 100%;}
+    .gridVinos{display: flex; flex-direction: column; flex-wrap: wrap;}
+    .textoVinos{padding-left: 0px;}
+    .paraisoV{padding-top: 0px;}
+    .paraisoVImg{padding-top: 0%;}
+    .paraisoRD{padding-top: 0px;}
+    .paraisoRDImg{padding-top: 0%;}
+    .paraisoCar{padding-top: 0px;}
+    .paraisoCarImg{padding-top: 0%;}
+    .paraisoC{padding-top: 0px;}
+    .paraisoCImg{padding-top: 0%;}
+    .vinoParaiso{width: 100%}
     .mapas{width:200px; height:150px;}
     .LogoF{display: none;}
     .carrucel{height: map-get($estilos, largoCarrucelM);}
@@ -11,7 +21,7 @@
 }
 @media only screen and (min-width: 1024px) {
     .mapas{width: 1150px; height:500px;}
-    .vinoParaiso{width: 50%;}
+    .vinoParaiso{width: 100%;}
     .carrucel{height: map-get($estilos, largoCarrucel);}
     footer{
         div{

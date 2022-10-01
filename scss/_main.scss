@@ -4,9 +4,9 @@ main{
         text-align: map-get($estilos, centro);
     }
     article{
-        .artiSup{@include padding(20%, 0, 0, 0)}
-        .artiInfe{@include padding(15%, 0, 0, 0)}
-        .paraiso{@include padding(10%, 0, 0, 0)}
+        .artiSup{@include padding(10%, 0, 5px, 5px)}
+        .artiInfe{@include padding(15%, 0, 5px, 5px)}
+        .paraiso{@include padding(10%, 0, 5px, 5px)}
     }
     form{text-align: map-get($estilos, centro);}
 }

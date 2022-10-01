@@ -1,0 +1,22 @@
+.gridVinos{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+    "paraisoV paraisoVImg"
+    "paraisoRD paraisoRDImg"
+    "paraisoC paraisoCImg"
+    "paraisoCar paraisoCarImg"
+}
+.textoVinos{justify-content: center; padding-top: 25px; padding-bottom: 25px; padding-left: 100px;}
+.paraisoV{grid-area: paraisoV; padding-top: 10px;}
+.paraisoVImg{grid-area: paraisoVImg; width: 100%; padding-top: 20px;}
+.paraisoRD{grid-area: paraisoRD; padding-top: 55px;}
+.paraisoRDImg{grid-area: paraisoRDImg; width: 100%; padding-top: 20px;}
+.paraisoC{grid-area: paraisoC; padding-top: 35px;}
+.paraisoCImg{grid-area: paraisoCImg; padding-top: 20px;}
+.paraisoCar{grid-area: paraisoCar; padding-top: 35px;}
+.paraisoCarImg{grid-area: paraisoCarImg; width: 100%; padding-top: 20px; padding-bottom: 10px;}
+.imgChar{width: 100%;}
+.RDImg{width: 100%;}
+.CarImg{width: 100%;}
