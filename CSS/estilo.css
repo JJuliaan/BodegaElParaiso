@@ -2,7 +2,87 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0; }
+
+.gridVinos {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "paraisoV paraisoVImg" "paraisoRD paraisoRDImg" "paraisoC paraisoCImg" "paraisoCar paraisoCarImg"; }
+
+.textoVinos {
+  justify-content: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 100px; }
+
+.paraisoV {
+  grid-area: paraisoV;
+  padding-top: 10px; }
+
+.paraisoVImg {
+  grid-area: paraisoVImg;
+  width: 100%;
+  padding-top: 20px; }
+
+.paraisoRD {
+  grid-area: paraisoRD;
+  padding-top: 55px; }
+
+.paraisoRDImg {
+  grid-area: paraisoRDImg;
+  width: 100%;
+  padding-top: 20px; }
+
+.paraisoC {
+  grid-area: paraisoC;
+  padding-top: 35px; }
+
+.paraisoCImg {
+  grid-area: paraisoCImg;
+  padding-top: 20px; }
+
+.paraisoCar {
+  grid-area: paraisoCar;
+  padding-top: 35px; }
+
+.paraisoCarImg {
+  grid-area: paraisoCarImg;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 10px; }
+
+.imgChar {
+  width: 100%; }
+
+.RDImg {
+  width: 100%; }
+
+.CarImg {
+  width: 100%; }
+
 @media only screen and (max-width: 768px) {
+  .gridVinos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; }
+  .textoVinos {
+    padding-left: 0px; }
+  .paraisoV {
+    padding-top: 0px; }
+  .paraisoVImg {
+    padding-top: 0%; }
+  .paraisoRD {
+    padding-top: 0px; }
+  .paraisoRDImg {
+    padding-top: 0%; }
+  .paraisoCar {
+    padding-top: 0px; }
+  .paraisoCarImg {
+    padding-top: 0%; }
+  .paraisoC {
+    padding-top: 0px; }
+  .paraisoCImg {
+    padding-top: 0%; }
   .vinoParaiso {
     width: 100%; }
   .mapas {
@@ -17,12 +97,13 @@
     padding-bottom: 0;
     padding-left: 0;
     padding-right: 0; } }
+
 @media only screen and (min-width: 1024px) {
   .mapas {
     width: 1150px;
     height: 500px; }
   .vinoParaiso {
-    width: 50%; }
+    width: 100%; }
   .carrucel {
     height: 735px; }
   footer div p {
@@ -30,17 +111,22 @@
     padding-bottom: 0;
     padding-left: 100px;
     padding-right: 0; } }
+
 .Logo, .LogoF {
   width: 100px; }
+
 .imgNH, .imgV, .imgFinc, .imgCont {
   width: 100%; }
+
 .imgPC {
   margin-bottom: -3px; }
+
 main h1 {
   padding-top: 10px;
   padding-bottom: 0;
   padding-left: 0;
   padding-right: 0; }
+
 p {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
@@ -50,6 +136,7 @@ p {
   padding-right: 0;
   color: white;
   line-height: 1.69; }
+
 h2, h3, h4, h5 {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #00FFFF;
@@ -57,9 +144,11 @@ h2, h3, h4, h5 {
   padding-bottom: 10px;
   padding-left: 0;
   padding-right: 0; }
+
 h4, h5 {
-  color: black;
+  color: white;
   font-weight: bold; }
+
 h1 {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: #00FFFF;
@@ -67,31 +156,35 @@ h1 {
   padding-bottom: 10px;
   padding-left: 0;
   padding-right: 0; }
+
 .borderT {
   border-bottom: solid black; }
+
 div header nav div {
   background-color: #45818E; }
+
 main {
   background-color: #134F5C; }
   main h1 {
     text-align: center; }
   main article .artiSup {
-    padding-top: 20%;
+    padding-top: 10%;
     padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0; }
+    padding-left: 5px;
+    padding-right: 5px; }
   main article .artiInfe {
     padding-top: 15%;
     padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0; }
+    padding-left: 5px;
+    padding-right: 5px; }
   main article .paraiso {
     padding-top: 10%;
     padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0; }
+    padding-left: 5px;
+    padding-right: 5px; }
   main form {
     text-align: center; }
+
 footer {
   background-color: #45818E; }
   footer a {
@@ -99,19 +192,3 @@ footer {
     footer a img {
       width: 50px;
       height: 45px; }
-  footer div p {
-    padding-top: 60px;
-    padding-bottom: 0;
-    padding-left: 100px;
-    padding-right: 0; }
-
-@media only screen and (max-width: 768px) {
-  .vinoParaiso {
-    width: 100%; }
-  .LogoF {
-    display: none; }
-  footer div p {
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0; } }
