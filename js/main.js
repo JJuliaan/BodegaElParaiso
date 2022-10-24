@@ -31,6 +31,8 @@
 // function nombreDeLaVariable(conOSinParametro){}
 // funncion felcha-- const nombreDeLaVariable = (parametros) => {return implisito}
 
+const { Algo } = require("sshpk");
+
 // OBJETOS
 
 // const objeto={
@@ -52,6 +54,15 @@
 // }
 // ASIGNAMOS
 // const nombreDeLaVariable= new algo("cualquierCosa", "cualquierCosa2");
+// console.log("objeto" in algo) (pregunta si esta esa propiedad)
+// for(const propiedad in algo){
+//     console.log(algo[propiedad])
+// } (trae todas las propiedades)
+
+// let frase ="hola papa "
+// string console.log(frase.length); (toma la longitud de la palabra)
+// console.log(frase.toLowerCase); (pone todo en minisculas)
+// console.log(frase.toUpperCase); (pone todo en mayusculas)
 let nombre = prompt("Escribe tu nombre");
 let apellido = prompt("Escribe tu apellido");
 let pepe = true;
