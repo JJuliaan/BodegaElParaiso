@@ -62,8 +62,6 @@ acceso();
 // function nombreDeLaVariable(conOSinParametro){}
 // funncion felcha-- const nombreDeLaVariable = (parametros) => {return implisito}
 
-const { Algo } = require("sshpk");
-
 // OBJETOS
 
 // const objeto={
@@ -85,7 +83,6 @@ const { Algo } = require("sshpk");
 // }
 // ASIGNAMOS
 // const nombreDeLaVariable= new algo("cualquierCosa", "cualquierCosa2");
-<<<<<<< HEAD
 // console.log("objeto" in algo) (pregunta si esta esa propiedad)
 // for(const propiedad in algo){
 //     console.log(algo[propiedad])
@@ -95,27 +92,8 @@ const { Algo } = require("sshpk");
 // string console.log(frase.length); (toma la longitud de la palabra)
 // console.log(frase.toLowerCase); (pone todo en minisculas)
 // console.log(frase.toUpperCase); (pone todo en mayusculas)
-let nombre = prompt("Escribe tu nombre");
-let apellido = prompt("Escribe tu apellido");
-let pepe = true;
-do{
-    if((nombre != "") && (apellido != "")){
-        pepe = false;
-        console.log("Bienvenido/a " + nombre + " " + apellido);
-    } else {
-        nombre = prompt("Escribe tu nombre");
-        apellido = prompt("Escribe tu apellido");
-    }
-}while(pepe == true);
-let edad = prompt("Cual es tu edad");
-if((edad >= 18) && (edad != "")){
-    console.log("Sos mayor de edad, todo lo que hagas ya interviene la ley");
-    
-} else {
-    console.log("No sos mayor de edad");
-}
-=======
 // length (longitud)
+
 // ARRAYS
 // const array1=["hola", "soy", "un", "array"];
 // const array2=[1,2,3,4,5,6,5,1,3,8];
@@ -221,4 +199,3 @@ if((edad >= 18) && (edad != "")){
 
 // console.log(Math(tiene muchos elementos para trabajar).PI)
 // Math.floor(devuelve sin decimales)
->>>>>>> JS
