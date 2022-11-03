@@ -131,7 +131,7 @@ acceso();
 // // EXISTE TAL ELEMENTO EN MI ARRAY (TRUE O FALSE)
 // console.log(unidos.includes(3));
 
-//EJEMPLO
+//EJEMPLO ARRAY
 // function Productos(nombre, precio, stock) {
 //     this.nombre = nombre
 //     this.precio = precio 
@@ -189,3 +189,105 @@ acceso();
 
 // console.log(Math(tiene muchos elementos para trabajar).PI)
 // Math.floor(devuelve sin decimales)
+
+// DOOM
+
+// te hace ver lo del documento
+// console.dir(document);
+// console.dir(document.head);
+
+// ACCEDER A LOS NODOS
+
+// accede por id
+// const titulo=document.getElementById(papapapa);
+// console.log(titulo);
+
+// accede por la clase
+// const lista= document.getElementsByClassName("navbar-nav");
+// console.log (lista);
+
+// accede a los elementos por su etiqueta
+// const div = document.getElementsByTagName("div");
+// console.log(div);
+
+// acceder a los elementos
+// console.log(div[1].innerHTML(que tiene adentro));
+// console.log(div[0]);
+
+// puede ver y permite modificar
+// console.log(div[1].innerText= "Incio");
+
+// PODER ACCEDER A LOS ELEMENTOS
+// const titulo = document.querySelector("button");
+// console.log(titulo);
+
+// CLICKS BOTONES
+// const btnBuscar= document.querySelector(".navbar-toggler");
+// console.log(btnBuscar);
+
+// btnBuscar.addEventListener("click", ()=>{
+//     console.log("Hiciste CLick");
+// })
+// otra forma todos los prefijos empiezan con el onNombreDelEvento
+// btnBuscar.onclick= ()=>{
+//     console.log("HCiciste CLick");
+// }
+// btnBuscar.addEventListener("mouseup", ()=>{
+//     console.log("Hiciste CLick");
+// })
+// btnBuscar.onmouseup = ()=>{
+//     console.log("Hiciste CLick");
+// }(Me gusta)
+// btnBuscar.onmouseover= ()=>{
+//     console.log("pasar el mouse por arriba");
+// }
+// btnBuscar.onmouseout= ()=>{
+//     console.log("Salir del mouse arriba");
+// }
+// const array=[
+//     "Argentina",
+//     "Italia",
+//     "Alemania",
+//     "Francia"
+// ]
+// const input= document.querySelectorAll("input");
+// console.log(input[0]);
+// const inputSearch= input[0];
+// // const mensaje= document.querySelector("#nombre")
+// inputSearch.onkeydown= ()=>{
+//     console.log("Apretaste una tecla");
+    // mensaje.innerText= inputSearch.value;
+//}
+
+// const select = document.querySelector("select[name='paises']")
+// array.forEach(pais=>{
+//     let option = document.createElement("option")
+//     option.value=pais;
+//     option.innerText=pais;
+//     select.appendChild(option)
+// })
+// change
+// select.onchange= ()=>{
+//     let option= select.options[select.selectedIndex].value;
+//     console.log(option)
+// }
+// enevnto input
+// inputSearch.oninput
+
+// const formulario= document.querySelector("form");
+// console.log(formulario);
+// formulario.onsubmit= (e)=>{
+//     e.preventDefault(); //(Buen objeto)
+//     //console.log(e.target);
+//     let formu= e.target;
+//     // console.log(formu);
+//     console.log(formu.children[1].value);
+//     console.log(formu.children[4].value);
+//     console.log(formu.children[7].value);
+//     console.log(formu.children[9].value);
+//     console.log(formu.children[10].value);
+//     console.log(formu.children[11].value);
+//     console.log(formu.children[18].value);
+//     console.log(formu.children[20].value);
+//     console.log("formulario enviado");
+// }
