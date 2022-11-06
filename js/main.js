@@ -1,6 +1,19 @@
+function inicio(name, username, age, year){
+    this.name = name;
+    this.username = username;
+    this.age = age;
+    this.year= year;
+}
+const guardador = [];
+function mostrarResta(ani, ag){
+    let verdaderaEdad = 2022 - ani;
+    return("La resta entre el año que naciste y tu edad son incorrectos, tu edad es " + ag + " y tu año de nacimiento es " + ani + " con lo cual tenes " + verdaderaEdad + " años");
+}
 function acceso(){
     let nombre = prompt("Escribe tu nombre");
     let apellido = prompt("Escribe tu apellido");
+    let edad;
+    let anio;
     let pepe = true;
     do{
         if((nombre != "") && (apellido != "")){
@@ -11,12 +24,31 @@ function acceso(){
         apellido = prompt("Escribe tu apellido");
     }
     }while(pepe == true);
-    let edad = prompt("Cual es tu edad");
-    if((edad >= 18) && (edad != "")){
-        console.log("Sos mayor de edad, disfruta de la pagina");
-        
+    do {
+        console.log("Lo ingresado debe se un numero");
+        edad = parseInt(prompt("Cual es tu edad"));
+    } while (isNaN(edad));
+    if((edad >= 18)){
+        do {
+            anio = parseInt(prompt("En que año naciste"));
+        } while ((isNaN(anio)) && (anio>= 1930 && anio <=2004)); //(Otra consulta como pongo que el año que escriba no sea mayor a .... y menor a .... porque no funciona)
+        let trueOFalse = 2022 - anio  ;
+        console.log(trueOFalse);
+        if(trueOFalse === edad){
+            let usuario = new inicio(nombre, apellido, edad, anio);
+            guardador.push(usuario);
+            console.log(guardador);
+            // console.log(usuario);
+            console.log("Bienvenido a la pagina");
+        } else {
+            console.log("Sos un fraude");
+            console.log(mostrarResta(anio, edad));
+        }
+        // do {
+        //     anio = parseInt(prompt("En que año naciste"))
+        // } while ((isNaN(año)) && (anio.length = 4)); (profe queria usar este do while pero no me funciona me podria decir el error)
     } else {
-        console.log("No sos mayor de edad, vuelve cuando lo seas"); //aca tengo la idea de que no le inicie la pagina por ser menor
+        console.log("No sos mayor de edad");
     }
 }
 acceso();
@@ -35,24 +67,6 @@ acceso();
 // Algo.toLowerCase(devuelve todas las letras en minisculas)
 // algo.toUpperCase(devuelve todas las letras en mayusculas) 
 
-// let nombre;
-// let apellido;
-// function names(name, surname){
-//     if((name != "") && (surname != "")){
-//         return("Bienvenido/a " + name + " " + surname);
-//     } else {
-//         return("Los campos son requeridos");
-//     }
-// }
-// let edad = prompt("Ingresa tu edad");
-// if(edad >= 18) {
-//     console.log("Hola Bienvenido");
-//     let nombre = prompt("Ingrese el nombre");
-//     let apellido = prompt("Ingresa tu apellido");
-//     names(nombre, apellido);
-// } else {
-//     console.log("No sos mayor de edad");
-// }
 // while
 // do while
 // for(let i=0; i<10; i++){
@@ -141,7 +155,7 @@ acceso();
 // // EXISTE TAL ELEMENTO EN MI ARRAY (TRUE O FALSE)
 // console.log(unidos.includes(3));
 
-//EJEMPLO
+//EJEMPLO ARRAY
 // function Productos(nombre, precio, stock) {
 //     this.nombre = nombre
 //     this.precio = precio 
@@ -199,3 +213,108 @@ acceso();
 
 // console.log(Math(tiene muchos elementos para trabajar).PI)
 // Math.floor(devuelve sin decimales)
+<<<<<<< HEAD
+=======
+
+// DOOM
+
+// te hace ver lo del documento
+// console.dir(document);
+// console.dir(document.head);
+
+// ACCEDER A LOS NODOS
+
+// accede por id
+// const titulo=document.getElementById(papapapa);
+// console.log(titulo);
+
+// accede por la clase
+// const lista= document.getElementsByClassName("navbar-nav");
+// console.log (lista);
+
+// accede a los elementos por su etiqueta
+// const div = document.getElementsByTagName("div");
+// console.log(div);
+
+// acceder a los elementos
+// console.log(div[1].innerHTML(que tiene adentro));
+// console.log(div[0]);
+
+// puede ver y permite modificar
+// console.log(div[1].innerText= "Incio");
+
+// PODER ACCEDER A LOS ELEMENTOS
+// const titulo = document.querySelector("button");
+// console.log(titulo);
+
+// CLICKS BOTONES
+// const btnBuscar= document.querySelector(".navbar-toggler");
+// console.log(btnBuscar);
+
+// btnBuscar.addEventListener("click", ()=>{
+//     console.log("Hiciste CLick");
+// })
+// otra forma todos los prefijos empiezan con el onNombreDelEvento
+// btnBuscar.onclick= ()=>{
+//     console.log("HCiciste CLick");
+// }
+// btnBuscar.addEventListener("mouseup", ()=>{
+//     console.log("Hiciste CLick");
+// })
+// btnBuscar.onmouseup = ()=>{
+//     console.log("Hiciste CLick");
+// }(Me gusta)
+// btnBuscar.onmouseover= ()=>{
+//     console.log("pasar el mouse por arriba");
+// }
+// btnBuscar.onmouseout= ()=>{
+//     console.log("Salir del mouse arriba");
+// }
+// const array=[
+//     "Argentina",
+//     "Italia",
+//     "Alemania",
+//     "Francia"
+// ]
+// const input= document.querySelectorAll("input");
+// console.log(input[0]);
+// const inputSearch= input[0];
+// // const mensaje= document.querySelector("#nombre")
+// inputSearch.onkeydown= ()=>{
+//     console.log("Apretaste una tecla");
+    // mensaje.innerText= inputSearch.value;
+//}
+
+// const select = document.querySelector("select[name='paises']")
+// array.forEach(pais=>{
+//     let option = document.createElement("option")
+//     option.value=pais;
+//     option.innerText=pais;
+//     select.appendChild(option)
+// })
+// change
+// select.onchange= ()=>{
+//     let option= select.options[select.selectedIndex].value;
+//     console.log(option)
+// }
+// enevnto input
+// inputSearch.oninput
+
+// const formulario= document.querySelector("form");
+// console.log(formulario);
+// formulario.onsubmit= (e)=>{
+//     e.preventDefault(); //(Buen objeto)
+//     //console.log(e.target);
+//     let formu= e.target;
+//     // console.log(formu);
+//     console.log(formu.children[1].value);
+//     console.log(formu.children[4].value);
+//     console.log(formu.children[7].value);
+//     console.log(formu.children[9].value);
+//     console.log(formu.children[10].value);
+//     console.log(formu.children[11].value);
+//     console.log(formu.children[18].value);
+//     console.log(formu.children[20].value);
+//     console.log("formulario enviado");
+// }
+>>>>>>> JS
