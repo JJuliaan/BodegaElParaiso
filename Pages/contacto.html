@@ -45,15 +45,15 @@
         <label for="correo"><p>Correo</p></label>
         <input type="text" name="correo" id="correo" placeholder="proyecto1@coderhouse.com" required><br>
         <label for="sexo"><p>Sexo</p></label>
-        <input type="radio" name="sexo" value="masculino" required><strong> Masculino </strong>
-        <input type="radio" name="sexo" value="femenino"><strong> Femenino </strong>
-        <input type="radio" name="sexo" value="otro"><strong> Otro </strong><br>
+        <input type="radio" name="sexo" id="sexo" value="masculino" required><strong> Masculino </strong>
+        <input type="radio" name="sexo" value="femenino" id="sexo"><strong> Femenino </strong>
+        <input type="radio" name="sexo" value="otro" id="sexo"><strong> Otro </strong><br>
+        <select name="paises" id="paises"><option value="default">Pais</option></select><br>
         <label for="datemin"><p>Ingrese su fecha de nacimiento</p></label>
         <input type="date" name="datemin" id="datemin" max="2004-12-30"><br>
         <label for="mensaje"><p>Mensaje</p></label><br>
         <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Ej: Hola"></textarea><br>
-        <input type="submit" name="Enviar" value="Enviar"><br><br>
-        <select name="paises" id="paises"><option value="default">Nombre de paises</option></select>
+        <input type="submit" name="Enviar" value="Enviar" id="enviar"><br><br>
       </form> 
     </main>
   </div>

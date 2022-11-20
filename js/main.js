@@ -1,57 +1,48 @@
-function inicio(name, username, age, year){
-    this.name = name;
-    this.username = username;
-    this.age = age;
-    this.year= year;
-}
-const guardador = [];
-function mostrarResta(ani, ag){
-    let verdaderaEdad = 2022 - ani;
-    return("La resta entre el año que naciste y tu edad son incorrectos, tu edad es " + ag + " y tu año de nacimiento es " + ani + " con lo cual tenes " + verdaderaEdad + " años");
-}
-function acceso(){
-    let nombre = prompt("Escribe tu nombre");
-    let apellido = prompt("Escribe tu apellido");
-    let edad;
-    let anio;
-    let pepe = true;
-    do{
-        if((nombre != "") && (apellido != "")){
-            pepe = false;
-            console.log("Bienvenido/a " + nombre + " " + apellido);
-    } else {
-        nombre = prompt("Escribe tu nombre");
-        apellido = prompt("Escribe tu apellido");
-    }
-    }while(pepe == true);
-    do {
-        console.log("Lo ingresado debe se un numero");
-        edad = parseInt(prompt("Cual es tu edad"));
-    } while (isNaN(edad));
-    if((edad >= 18)){
-        do {
-            anio = parseInt(prompt("En que año naciste"));
-        } while ((isNaN(anio)) && (anio>= 1930 && anio <=2004)); //(Otra consulta como pongo que el año que escriba no sea mayor a .... y menor a .... porque no funciona)
-        let trueOFalse = 2022 - anio  ;
-        console.log(trueOFalse);
-        if(trueOFalse === edad){
-            let usuario = new inicio(nombre, apellido, edad, anio);
-            guardador.push(usuario);
-            console.log(guardador);
-            // console.log(usuario);
-            console.log("Bienvenido a la pagina");
-        } else {
-            console.log("Sos un fraude");
-            console.log(mostrarResta(anio, edad));
-        }
-        // do {
-        //     anio = parseInt(prompt("En que año naciste"))
-        // } while ((isNaN(año)) && (anio.length = 4)); (profe queria usar este do while pero no me funciona me podria decir el error)
-    } else {
-        console.log("No sos mayor de edad");
-    }
-}
-acceso();
+// function inicio(name, username, age, year){
+//     this.name = name;
+//     this.username = username;
+//     this.age = age;
+//     this.year= year;
+// }
+// const guardador = [];
+// function acceso(){
+//     let nombre = prompt("Escribe tu nombre");
+//     let apellido = prompt("Escribe tu apellido");
+//     let edad;
+//     let anio;
+//     let pepe = true;
+//     let gonza = 0;
+//     do{
+//         if((nombre != "") && (apellido != "")){
+//             pepe = false;
+//             console.log("Bienvenido/a " + nombre + " " + apellido);
+//     } else {
+//         nombre = prompt("Escribe tu nombre");
+//         apellido = prompt("Escribe tu apellido");
+//     }
+//     }while(pepe == true);
+//     do {
+//         console.log("Lo ingresado debe se un numero");
+//         edad = parseInt(prompt("Cual es tu edad"));
+//     } while (isNaN(edad));
+//     if((edad >= 18)){
+//         do {
+//             anio = parseInt(prompt("En que año naciste"));
+//         } while (isNaN(anio));
+//         let trueOFalse = 2021 - anio;
+//         console.log(trueOFalse);
+//         if(trueOFalse === edad){
+//             let usuario = new inicio(nombre, apellido, edad, anio);
+//             guardador.push(usuario);
+//             console.log(guardador);
+//             // console.log(usuario);
+//             console.log("Bienvenido a la pagina");
+//         }
+//     } else {
+//         alert("No sos mayor de edad");
+//     }
+// }
+// acceso();
 
 // let == declarar y/o definir
 // nombreDeLaVariable == definicion
@@ -98,6 +89,7 @@ acceso();
 // ASIGNAMOS
 // const nombreDeLaVariable= new algo("cualquierCosa", "cualquierCosa2");
 // length (longitud)
+
 // ARRAYS
 // const array1=["hola", "soy", "un", "array"];
 // const array2=[1,2,3,4,5,6,5,1,3,8];
@@ -110,7 +102,7 @@ acceso();
 // array2.push(55, "hola");
 // console.log(array2);
 
-// // UNSHIFT (agrega elementos al principio)
+// UNSHIFT (agrega elementos al principio)
 // array2.unshift(100);
 // console.log(array2);
 
@@ -126,7 +118,7 @@ acceso();
 // array2.splice(5,1); // arrancas de la posicion 5 y elimina 1
 // console.log(array2);
 
-// // NOS DEVUELVE UN STRING DE MI ARRAY
+// NOS DEVUELVE UN STRING DE MI ARRAY
 // console.log(array2.join("\n"));
 
 // // CONCATENAR OTRO ARRAY
@@ -258,50 +250,117 @@ acceso();
 // btnBuscar.onmouseout= ()=>{
 //     console.log("Salir del mouse arriba");
 // }
-// const array=[
-//     "Argentina",
-//     "Italia",
-//     "Alemania",
-//     "Francia"
-// ]
-// const input= document.querySelectorAll("input");
+const array=[
+    "Argentina",
+    "Italia",
+    "Alemania",
+    "Francia"
+]
+const input= document.querySelectorAll("input");
 // console.log(input[0]);
-// const inputSearch= input[0];
-// // const mensaje= document.querySelector("#nombre")
-// inputSearch.onkeydown= ()=>{
-//     console.log("Apretaste una tecla");
-    // mensaje.innerText= inputSearch.value;
-//}
+const inputSearch= input[0];
+const mensaje= document.querySelector("#nombre")
+inputSearch.onkeydown= ()=>{
+    console.log("Apretaste una tecla");
+    mensaje.innerText= inputSearch.value;
+}
 
-// const select = document.querySelector("select[name='paises']")
-// array.forEach(pais=>{
-//     let option = document.createElement("option")
-//     option.value=pais;
-//     option.innerText=pais;
-//     select.appendChild(option)
-// })
+
+const select = document.querySelector("select[name='paises']")
+array.forEach(pais=>{
+    let option = document.createElement("option")
+    option.value=pais;
+    option.innerText=pais;
+    select.appendChild(option)
+})
+const opClick = document.querySelector("#paises");
+opClick.onclick = ()=>{
+    console.log("Hiciste Click");
+}
+const fcClick = document.querySelector("#datemin");
+fcClick.onclick = ()=>{
+    console.log("Hiciste Click");
+}
+const envClick = document.querySelector("#enviar");
+envClick.onclick = ()=>{
+    console.log("Hiciste Click");
+}
+const msjBoton = document.querySelector('#mensaje');
+msjBoton.onkeydown= ()=>{
+    console.log("Apretaste una letra");
+}
+const apBoton = document.querySelector('#apellido');
+apBoton.onkeydown= ()=>{
+    console.log("Apretaste una letra");
+}
+const mailBoton = document.querySelector('#correo');
+mailBoton.onkeydown= ()=>{
+    console.log("Apretaste una letra");
+}
 // change
-// select.onchange= ()=>{
-//     let option= select.options[select.selectedIndex].value;
-//     console.log(option)
-// }
+select.onchange= ()=>{
+    let option= select.options[select.selectedIndex].value;
+    console.log(option)
+}
 // enevnto input
 // inputSearch.oninput
 
-// const formulario= document.querySelector("form");
+const formulario= document.querySelector("form");
 // console.log(formulario);
-// formulario.onsubmit= (e)=>{
-//     e.preventDefault(); //(Buen objeto)
-//     //console.log(e.target);
-//     let formu= e.target;
-//     // console.log(formu);
-//     console.log(formu.children[1].value);
-//     console.log(formu.children[4].value);
-//     console.log(formu.children[7].value);
-//     console.log(formu.children[9].value);
-//     console.log(formu.children[10].value);
-//     console.log(formu.children[11].value);
-//     console.log(formu.children[18].value);
-//     console.log(formu.children[20].value);
-//     console.log("formulario enviado");
+formulario.onsubmit= (e)=>{
+    e.preventDefault(); //(Buen objeto)
+    // console.log(e.target);
+    let formu= e.target;
+    // console.log(formu);
+    // console.log(formu.children[1].value);
+    // console.log(formu.children[4].value);
+    // console.log(formu.children[7].value);
+    // console.log(formu.children[9].value);
+    // console.log(formu.children[10].value);
+    // console.log(formu.children[11].value);
+    // console.log(formu.children[18].value);
+    // console.log(formu.children[22].value);
+    alert("formulario enviado");
+    localStorage.setItem('Nombre', formu.children[1].value);
+    localStorage.setItem('Apellido', formu.children[4].value);
+    localStorage.setItem('Mail', formu.children[7].value);
+    localStorage.setItem('Nacimiento', formu.children[20].value);
+    sessionStorage.setItem('Mensaje', formu.children[24].value);
+}
+
+
+
+// Clase 10
+// SETEAR VALORES
+// localStorage.setItem('Saludo', "Hola Mundo");
+// localStorage.setItem('Numero', 1);
+// localStorage.setItem('esValido', true);
+// TRAER VALORES DE STORAGE
+// let mensaje= localStorage.getItem('Saludo');//(se recuerdan los datos)
+// let num= localStorage.getItem('Numero');
+// let valido= localStorage.getItem('esValido');
+// console.log(typeof mensaje); //(ver el valor)
+// console.log(num);
+// console.log(valido);
+// sessionStorage
+// sessionStorage.setItem('mail', "mail@mail.com");
+// sessionStorage.setItem('selec', [1,2,3,4,5,6,7,8]);
+
+// let numeros= sessionStorage.getItem('selec').split(',')//(convierte array)(session se pierdem los datos si cerras el navegador);
+// console.log(numeros);
+// recorrer el storage
+// for(let i=0; i < localStorage.length; i++){
+//     let clave= localStorage.key(i);
+//     // console.log(clave);
+//     console.log(clave + " " + localStorage.getItem(clave));
 // }
+// remover
+// localStorage.removeItem('JA');
+// sessionStorage.clear(); //(Borra todo)
+
+// Clase 13
+
+//operador AND
+// const almacen = [];
+// almacen.length===0 && console.log("nada"); //imprime si es verdad
+
